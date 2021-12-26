@@ -1,8 +1,6 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { firebase } from "./firebase/initFirebase";
-import Card from "./components/Card";
 import { AuthProvider } from "./firebase/auth";
 import Error from "./pages/Error";
 
