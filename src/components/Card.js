@@ -40,7 +40,7 @@ function Card({
         sx={{
           maxWidth: 600,
           maxHeight: 250,
-          backgroundColor: "#2F2FA2",
+          backgroundColor: "#4234FB",
           boxShadow: "0px 0px 10px #291528",
           m: "20px auto",
           p: 2,
@@ -108,13 +108,13 @@ function Card({
                     marginLeft: "auto",
                     border: "none",
                     outline: "none",
-                    background: "linear-gradient(90deg, #ff9966, #ff5e62)",
                     padding: "",
                     borderRadius: "50px",
                     color: "white",
                     fontSize: "1rem",
                     transition: "all .2s ease-in",
                     textDecoration: "none",
+                    backgroundColor: "#74CBFB",
                   }}
                 >
                   Yer Ayırt {seatLeft}

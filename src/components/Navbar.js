@@ -20,7 +20,7 @@ const theme = createTheme({
       main: "#fff",
     },
     secondary: {
-      main: "#ff5e62",
+      main: "#5194FB",
     },
     background: {
       color: "",
@@ -33,7 +33,6 @@ const theme = createTheme({
 
 function Navbar() {
   const { user, logout } = useAuth();
-  console.log(user);
   const handleLogin = () => {
     signInWithGoogle();
   };
@@ -53,18 +52,18 @@ function Navbar() {
           sx={{
             border: "none",
             outline: "none",
-            background: "#2f2fa2",
+            background: "#fff",
             padding: "",
-            fontSize: "1rem",
-            boxShadow: "1px 1px 5px rgb(47, 47, 162) ",
-            transition: "all .2s ease-in",
+            boxShadow: "none",
+            position: "fixed",
+            borderBottom: "1px solid #e6e6e6",
             textDecoration: "none",
           }}
         >
           <Toolbar>
-            <Typography sx={{ color: "primary" }}>
+            <Typography sx={{ color: "#63C7FF" }}>
               <Button component={Link} to="/">
-                <h1>Ela Vela Vel Vel Vela</h1>
+                <h1>Geziyoruz</h1>
               </Button>
             </Typography>
             <Button
@@ -87,7 +86,7 @@ function Navbar() {
                     sx={{ display: "flex", alignItems: "center" }}
                   >
                     <Avatar src={user?.photoURL} />
-                    <Typography sx={{ marginLeft: 1, color: "white" }}>
+                    <Typography sx={{ marginLeft: 1, color: "#63A0FF" }}>
                       {user?.displayName}
                     </Typography>
                   </Button>
