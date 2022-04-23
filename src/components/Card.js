@@ -115,6 +115,10 @@ function Card({
                     transition: "all .2s ease-in",
                     textDecoration: "none",
                     backgroundColor: "#74CBFB",
+                    "&:hover": {
+                      backgroundColor: "#74CBFB",
+                      color: "white",
+                    },
                   }}
                 >
                   Yer Ayırt {seatLeft}
